@@ -248,3 +248,15 @@ p{color:var(--muted);font-size:17px;line-height:1.55;margin:0 0 16px;font-weight
     aspect-ratio: 4 / 3;
   }
 }
+
+/* Local lab / terminal credibility card */
+.terminal-card pre {
+  white-space: pre-wrap;
+  overflow-x: auto;
+  border-radius: 18px;
+  padding: 1rem;
+  background: rgba(0,0,0,.45);
+  border: 1px solid rgba(255,255,255,.14);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  line-height: 1.45;
+}
