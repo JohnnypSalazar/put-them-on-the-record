@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Free Legal Packet Generator</title>
+  <meta name="description" content="Paste what happened and get a readable legal packet draft." />
+  <link rel="stylesheet" href="./assets/site.css" />
+  
+</head>
+<body>
+  <main class="wrap">
+    <nav class="nav">
+      <div class="brand">Put Them On The Record</div>
+      <div class="links">
+        <a href="./index.html">Home</a>
+        <a href="./free_legal_packet_builder.html">Free Packet</a>
+        <a href="./case_studies.html">Case Studies</a>
+        <a href="./texttone.html">TextTone</a>
+        <a href="./xray_mirror_dimension.html">X-Ray</a>
+        <a href="./lab.html">Lab</a>
+      </div>
+    </nav>
+    <section class="hero">
+      <div class="kicker">Copy / paste / packet</div>
+      <h1>Free Legal Packet Generator.</h1>
+      <p class="big">For parking tickets, landlord fights, child support, agency complaints, police incidents, workplace issues, school problems, and every legal-ish mess in between.</p>
+      <div class="actions"><a class="btn hot" href="#builder">Start building</a><a class="btn" href="./case_studies.html">Why this exists</a></div>
+    </section>
+<section class="notice">This is not legal advice, not representation, and not a promise of results. It is a record-organizing tool. Paste good facts in. Get a cleaner packet out.</section>
+<section id="builder" class="formbox">
+  <h2>Paste the mess. Get the packet.</h2>
+  <div class="formgrid">
+    <div class="field"><label for="situation">Situation type</label><select id="situation"><option>General legal mess</option><option>Parking ticket</option><option>Landlord / housing</option><option>Child support / family court</option><option>Police / sheriff incident</option><option>Workplace problem</option><option>School problem</option><option>Medical or crisis-system issue</option><option>Agency complaint</option></select></div>
+    <div class="field"><label for="dates">Dates or rough timeline</label><textarea id="dates" placeholder="March 1: notice received. March 8: called office. March 12: ignored..."></textarea></div>
+    <div class="field"><label for="happened">What happened?</label><textarea id="happened" placeholder="Plain English. Messy is fine. The machine likes raw clay."></textarea></div>
+    <div class="field"><label for="people">People / entities involved</label><textarea id="people" placeholder="Names, offices, agencies, companies, witnesses. Redact public copies later."></textarea></div>
+    <div class="field"><label for="records">What records exist?</label><textarea id="records" placeholder="Texts, emails, receipts, reports, screenshots, audio, video, notices, PDFs."></textarea></div>
+    <div class="field"><label for="ignored">What was ignored or wrong?</label><textarea id="ignored" placeholder="What did the official story miss, minimize, or mangle?"></textarea></div>
+    <div class="field"><label for="harm">What did it cost?</label><textarea id="harm" placeholder="Money, time, health, housing, access, property, work, dignity, safety."></textarea></div>
+    <div class="field"><label for="want">What do you want next?</label><textarea id="want" placeholder="Attorney review, records request, complaint, media summary, personal file, etc."></textarea></div>
+  </div>
+  <div class="actions"><button class="btn hot" onclick="buildPacket()">Generate packet draft</button><button class="btn" onclick="copyPacket()">Copy output</button></div>
+</section>
+<section class="formbox"><h2>Output</h2><pre id="packetOutput" class="receipt output">Your packet draft appears here. Nothing leaves this static page unless you copy it somewhere.</pre></section>
+<script src="./assets/site.js"></script>
+
+    <footer class="footer">
+      <div>Public signal. Private engine. Private engine offline.</div>
+      <div>Not legal advice. A record machine.</div>
+    </footer>
+  
+<section class="card notice attorney-review-gate" id="attorney-review-gate">
+  <!-- ATTORNEY_REVIEW_GATE_BLOCK -->
+  <p class="eyebrow">Attorney Review Gate</p>
+  <h2>Not legal advice. A record machine.</h2>
+  <p>This tool helps organize facts, timelines, evidence categories, open questions, and attorney-review topics. It does not decide legal claims, crimes, damages, deadlines, remedies, or strategy.</p>
+  <p>Have a qualified attorney make the final call on legal theory, possible damages, deadlines, claims, defenses, filings, and next steps. Review, correct, redact, and verify everything before sharing it.</p>
+  <p><a href="legal/attorney_review_gate.html">Read the full Attorney Review Gate.</a></p>
+</section>
+
+</main>
+</body>
+</html>
