@@ -43,3 +43,48 @@ p{color:var(--muted);font-size:17px;line-height:1.55;margin:0 0 16px;font-weight
 .split{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:stretch}.ledger{padding:24px}.list{display:grid;gap:10px;margin-top:14px}.list div{padding:12px 14px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.055);color:var(--muted);font-weight:750}.tagrow{display:flex;flex-wrap:wrap;gap:9px;margin:16px 0}.tag{font-family:var(--mono);font-size:12px;border:1px solid var(--line);background:rgba(255,255,255,.065);padding:8px 10px;border-radius:999px;color:var(--muted);font-weight:900}.receipt{font-family:var(--mono);white-space:pre-wrap;background:rgba(0,0,0,.34);border:1px dashed rgba(255,255,255,.22);border-radius:18px;padding:18px;color:rgba(255,240,200,.83);line-height:1.35;overflow:auto}
 .formgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:grid;gap:8px}.field label{font-weight:950}.field input,.field textarea,.field select{width:100%;border:1px solid var(--line);border-radius:16px;background:rgba(0,0,0,.28);color:var(--ink);padding:14px;font:600 15px/1.4 var(--sans);outline:none}.field textarea{min-height:130px;resize:vertical}.field input:focus,.field textarea:focus,.field select:focus{border-color:rgba(240,199,110,.65);box-shadow:0 0 0 3px rgba(240,199,110,.13)}.formbox{padding:26px;margin:22px 0}.output{min-height:260px}.footer{margin-top:70px;padding-top:26px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:rgba(255,240,200,.55);font-family:var(--mono);font-size:12px}.notice{border:1px solid rgba(255,122,200,.35);background:rgba(255,122,200,.08);border-radius:18px;padding:16px;color:rgba(255,240,200,.86);font-weight:750}.productshot{border-radius:24px;border:1px solid var(--line);background:linear-gradient(135deg,rgba(255,122,200,.13),rgba(169,197,255,.12));min-height:320px;padding:26px;display:grid;place-items:center;text-align:center}.hugeword{font-size:clamp(44px,8vw,92px);line-height:.88;letter-spacing:-.07em;font-weight:950}
 @media(max-width:860px){.nav{align-items:flex-start;flex-direction:column}.grid,.grid.two,.grid.four,.split,.formgrid{grid-template-columns:1fr}h1{font-size:clamp(48px,16vw,76px)}.wrap{width:min(100% - 22px,1160px);padding-top:22px}.hero{border-radius:24px}.card,.section,.wide,.formbox{border-radius:24px}}
+
+/* Six Fifty form/project pass */
+.six-fifty-door-panel {
+  margin-top: 2rem;
+}
+.six-fifty-door-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.packet-form {
+  display: grid;
+  gap: 1rem;
+}
+.packet-form label {
+  display: grid;
+  gap: .35rem;
+  font-weight: 700;
+}
+.packet-form input,
+.packet-form textarea,
+.packet-output {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.18);
+  padding: .85rem;
+  background: rgba(0,0,0,.25);
+  color: inherit;
+  font: inherit;
+}
+.packet-output {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  line-height: 1.45;
+}
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  align-items: center;
+}
+.notice {
+  border: 1px solid rgba(255,255,255,.22);
+}

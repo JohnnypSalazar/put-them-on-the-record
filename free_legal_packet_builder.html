@@ -1,64 +1,91 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Free Legal Packet Generator</title>
-  <meta name="description" content="Paste what happened and get a readable legal packet draft." />
-  <link rel="stylesheet" href="./assets/site.css" />
-  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Free Legal Packet Builder</title>
+  <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
   <main class="wrap">
     <nav class="nav">
-      <div class="brand">Put Them On The Record</div>
-      <div class="links">
-        <a href="./index.html">Home</a>
-        <a href="./free_legal_packet_builder.html">Free Packet</a>
-        <a href="./case_studies.html">Case Studies</a>
-        <a href="./texttone.html">TextTone</a>
-        <a href="./xray_mirror_dimension.html">X-Ray</a>
-        <a href="./lab.html">Lab</a>
-      </div>
+      <a href="index.html">Six Fifty</a>
+      <a href="six_fifty_record/">Public Record Pack</a>
+      <a href="record.html">Put Them On The Record</a>
+      <a href="projects.html">Projects</a>
     </nav>
-    <section class="hero">
-      <div class="kicker">Copy / paste / packet</div>
-      <h1>Free Legal Packet Generator.</h1>
-      <p class="big">For parking tickets, landlord fights, child support, agency complaints, police incidents, workplace issues, school problems, and every legal-ish mess in between.</p>
-      <div class="actions"><a class="btn hot" href="#builder">Start building</a><a class="btn" href="./case_studies.html">Why this exists</a></div>
+
+    <section class="hero card">
+      <p class="eyebrow">Free Tool</p>
+      <h1>Put the mess into boxes.</h1>
+      <p>This browser-only builder turns scattered facts, dates, records, allegations, open questions, and evidence gaps into a clean Markdown packet.</p>
+      <p><strong>Version 0.1:</strong> nothing is submitted anywhere. The packet is generated in your browser so you can copy it, download it, edit it, or bring it to counsel.</p>
     </section>
-<section class="notice">This is not legal advice, not representation, and not a promise of results. It is a record-organizing tool. Paste good facts in. Get a cleaner packet out.</section>
-<section id="builder" class="formbox">
-  <h2>Paste the mess. Get the packet.</h2>
-  <div class="formgrid">
-    <div class="field"><label for="situation">Situation type</label><select id="situation"><option>General legal mess</option><option>Parking ticket</option><option>Landlord / housing</option><option>Child support / family court</option><option>Police / sheriff incident</option><option>Workplace problem</option><option>School problem</option><option>Medical or crisis-system issue</option><option>Agency complaint</option></select></div>
-    <div class="field"><label for="dates">Dates or rough timeline</label><textarea id="dates" placeholder="March 1: notice received. March 8: called office. March 12: ignored..."></textarea></div>
-    <div class="field"><label for="happened">What happened?</label><textarea id="happened" placeholder="Plain English. Messy is fine. The machine likes raw clay."></textarea></div>
-    <div class="field"><label for="people">People / entities involved</label><textarea id="people" placeholder="Names, offices, agencies, companies, witnesses. Redact public copies later."></textarea></div>
-    <div class="field"><label for="records">What records exist?</label><textarea id="records" placeholder="Texts, emails, receipts, reports, screenshots, audio, video, notices, PDFs."></textarea></div>
-    <div class="field"><label for="ignored">What was ignored or wrong?</label><textarea id="ignored" placeholder="What did the official story miss, minimize, or mangle?"></textarea></div>
-    <div class="field"><label for="harm">What did it cost?</label><textarea id="harm" placeholder="Money, time, health, housing, access, property, work, dignity, safety."></textarea></div>
-    <div class="field"><label for="want">What do you want next?</label><textarea id="want" placeholder="Attorney review, records request, complaint, media summary, personal file, etc."></textarea></div>
-  </div>
-  <div class="actions"><button class="btn hot" onclick="buildPacket()">Generate packet draft</button><button class="btn" onclick="copyPacket()">Copy output</button></div>
-</section>
-<section class="formbox"><h2>Output</h2><pre id="packetOutput" class="receipt output">Your packet draft appears here. Nothing leaves this static page unless you copy it somewhere.</pre></section>
-<script src="./assets/site.js"></script>
 
-    <footer class="footer">
-      <div>Public signal. Private engine. Private engine offline.</div>
-      <div>Not legal advice. A record machine.</div>
-    </footer>
-  
-<section class="card notice attorney-review-gate" id="attorney-review-gate">
-  <!-- ATTORNEY_REVIEW_GATE_BLOCK -->
-  <p class="eyebrow">Attorney Review Gate</p>
-  <h2>Not legal advice. A record machine.</h2>
-  <p>This tool helps organize facts, timelines, evidence categories, open questions, and attorney-review topics. It does not decide legal claims, crimes, damages, deadlines, remedies, or strategy.</p>
-  <p>Have a qualified attorney make the final call on legal theory, possible damages, deadlines, claims, defenses, filings, and next steps. Review, correct, redact, and verify everything before sharing it.</p>
-  <p><a href="legal/attorney_review_gate.html">Read the full Attorney Review Gate.</a></p>
-</section>
+    <section class="card notice attorney-review-gate">
+      <p class="eyebrow">Attorney Review Gate</p>
+      <h2>Not legal advice. A record machine.</h2>
+      <p>This tool helps organize facts, timelines, evidence categories, open questions, and attorney-review topics. It does not decide legal claims, crimes, damages, deadlines, remedies, or strategy.</p>
+      <p>Have a qualified attorney make the final call. Review, correct, redact, and verify everything before sharing it.</p>
+    </section>
 
-</main>
+    <section class="card">
+      <h2>Build a packet</h2>
+      <form id="packetForm" class="packet-form">
+        <label>
+          Packet title
+          <input name="title" placeholder="Example: The Court Took My $6.50">
+        </label>
+
+        <label>
+          What happened? Keep it plain.
+          <textarea name="summary" rows="5" placeholder="In plain language, explain the situation."></textarea>
+        </label>
+
+        <label>
+          Key dates or timeline
+          <textarea name="timeline" rows="5" placeholder="One date per line if possible. Example: 2025-04-07 - filing accepted, payment accepted, participation disputed."></textarea>
+        </label>
+
+        <label>
+          People, offices, companies, or agencies involved
+          <textarea name="actors" rows="4" placeholder="Names, roles, departments, agencies, companies, or unknown parties. Redact private info before sharing publicly."></textarea>
+        </label>
+
+        <label>
+          Records, receipts, screenshots, emails, filings, reports, or proof you believe exists
+          <textarea name="evidence" rows="5" placeholder="List records. Do not paste raw private evidence here if you are not ready to preserve/share it."></textarea>
+        </label>
+
+        <label>
+          Allegations or harms
+          <textarea name="allegations" rows="5" placeholder="What you believe went wrong. The output will label these as allegations, not court findings."></textarea>
+        </label>
+
+        <label>
+          Questions for counsel, agency, reporter, or reviewer
+          <textarea name="questions" rows="5" placeholder="What should a serious reviewer answer?"></textarea>
+        </label>
+
+        <label>
+          Privacy notes / do-not-publish items
+          <textarea name="privacy" rows="4" placeholder="Private addresses, phone numbers, medical info, account numbers, minors, raw screenshots, etc."></textarea>
+        </label>
+
+        <div class="button-row">
+          <button type="button" id="buildPacket" class="button">Generate packet</button>
+          <button type="button" id="copyPacket" class="button ghost">Copy output</button>
+          <button type="button" id="downloadPacket" class="button ghost">Download .md</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Generated packet</h2>
+      <textarea id="packetOutput" class="packet-output" rows="22" placeholder="Your generated packet will appear here."></textarea>
+    </section>
+  </main>
+
+  <script src="assets/packet_builder.js"></script>
 </body>
 </html>
