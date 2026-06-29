@@ -133,3 +133,48 @@ p{color:var(--muted);font-size:17px;line-height:1.55;margin:0 0 16px;font-weight
 .notice {
   border: 1px solid rgba(255,255,255,.22);
 }
+
+/* Six Fifty form/project pass */
+.six-fifty-door-panel {
+  margin-top: 2rem;
+}
+.six-fifty-door-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.packet-form {
+  display: grid;
+  gap: 1rem;
+}
+.packet-form label {
+  display: grid;
+  gap: .35rem;
+  font-weight: 700;
+}
+.packet-form input,
+.packet-form textarea,
+.packet-output {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.18);
+  padding: .85rem;
+  background: rgba(0,0,0,.25);
+  color: inherit;
+  font: inherit;
+}
+.packet-output {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  line-height: 1.45;
+}
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  align-items: center;
+}
+.notice {
+  border: 1px solid rgba(255,255,255,.22);
+}
