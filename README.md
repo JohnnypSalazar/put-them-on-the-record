@@ -35,3 +35,13 @@ The public record is controlled, readable, and redacted.
 The private engine stays offline.
 
 No restart required.
+
+
+## Speaking-name project map
+
+- `ayane.html` is the presence-engine project.
+- `mei_room.html` is the ambient room / interface mood project.
+- `xray.html` is the file-visibility project.
+- `mirror_dimension.html` is the interface-world project.
+- `essays_white_papers.html` is the Scientist Poser essay and white-paper shelf.
+- `companion.html` and `xray_mirror_dimension.html` are bridge pages so old links do not break.

@@ -1541,9 +1541,9 @@ body:before{
 
       <div class="doors">
         <button class="primary" onclick="location.reload()">Reload the Bit</button>
-        <a class="door" id="story" href="six_fifty_record/">The Story</a>
-        <a class="door" id="tools" href="free_legal_packet_builder.html">Get the Tools</a>
-        <a class="door" id="notes" href="lab.html">Scientist Poser Field Notes</a>
+        <a class="door" id="story" href="#">The Story</a>
+        <a class="door" id="tools" href="#">Get the Tools</a>
+        <a class="door" id="notes" href="#">Scientist Poser Field Notes</a>
       </div>
 
       <div class="receipt" id="receipt">RECEIPT
@@ -1759,7 +1759,7 @@ OUTCOME: Explain the contradiction.</div>
     <a class="button" href="free_legal_packet_builder.html">Use the Free Packet Builder</a>
     <a class="button" href="six_fifty_record/">Open the $6.50 Record Pack</a>
     <a class="button" href="projects.html">Scientist Poser / Projects</a>
-    <a class="button ghost" href="essays_white_papers.html">Essays / White Papers</a>
+    <a class="button ghost" href="lab.html">Field Notes</a>
   </div>
 </section>
 
