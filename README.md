@@ -45,3 +45,12 @@ No restart required.
 - `mirror_dimension.html` is the interface-world project.
 - `essays_white_papers.html` is the Scientist Poser essay and white-paper shelf.
 - `companion.html` and `xray_mirror_dimension.html` are bridge pages so old links do not break.
+
+
+## Teaser doors
+
+- `project_teasers.html` is the public-safe screenshot wall.
+- `suze_styler.html` is the Suze Styler / Den Deck teaser.
+- `mirror_drive.html` is the Mirror Drive teaser.
+- `xray.html` maps folders.
+- `mirror_dimension.html` gives the tools a world.
