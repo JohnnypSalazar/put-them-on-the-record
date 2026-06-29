@@ -34,3 +34,5 @@ Do not link or publish raw RCC screenshots or raw zip contents unless redacted/c
 Screenshots are proof-of-work, not source-code disclosure.
 Public gets glow.
 Private engine stays offline.
+
+- `assets/teasers/architect_sketch.png` - Field Sketches / architecture pencil teaser
