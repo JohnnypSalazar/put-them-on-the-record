@@ -54,3 +54,10 @@ No restart required.
 - `mirror_drive.html` is the Mirror Drive teaser.
 - `xray.html` maps folders.
 - `mirror_dimension.html` gives the tools a world.
+
+
+## Additional project doors
+
+- `expression_dynamics.html` is the boutique expressive-face / game-character teaser.
+- `local_lab.html` is redacted proof-of-work telemetry only.
+- `mirror_drive.html` is the Mirror Drive / KITT-but-useful teaser.

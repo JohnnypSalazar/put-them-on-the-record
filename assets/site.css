@@ -260,3 +260,7 @@ p{color:var(--muted);font-size:17px;line-height:1.55;margin:0 0 16px;font-weight
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   line-height: 1.45;
 }
+
+.teaser-frame.wide {
+  aspect-ratio: 16 / 8;
+}

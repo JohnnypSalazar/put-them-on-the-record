@@ -9,6 +9,7 @@ Status: public-safe teaser asset map.
 - `assets/teasers/xray_alt.png` — X-Ray alternate
 - `assets/teasers/suze_styler.png` — Suze Styler primary
 - `assets/teasers/suze_styler_alt.png` — Suze Styler alternate
+- `assets/teasers/expression_dynamics.png` — Expression Dynamics Studio
 
 ## Needed later
 
@@ -23,9 +24,10 @@ Status: public-safe teaser asset map.
 
 ## Held private
 
-RCC screenshots are held in `assets/private_hold/` for review only.
+- Raw RCC screenshots stay in `assets/private_hold/` for review only.
+- Mirror Drive zip review stays in `assets/private_hold/mirror_drive_zip_review/`.
 
-Do not link or publish raw RCC screenshots unless redacted/cropped. Raw RCC screenshots may expose local paths, collection names, ports, and internal corpus structure.
+Do not link or publish raw RCC screenshots or raw zip contents unless redacted/cropped/reviewed. Raw RCC screenshots may expose local paths, collection names, ports, and internal corpus structure.
 
 ## Rule
 

@@ -1,0 +1,9 @@
+LOCAL LAB STATUS
+corpus: private local archive
+retrieval: online
+vector dimension: 1024
+collection names: redacted
+local paths: redacted
+source code: offline
+private engine: offline
+public export: proof-of-work only
